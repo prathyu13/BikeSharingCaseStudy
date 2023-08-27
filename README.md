@@ -21,8 +21,9 @@ The company wants to know:
 
 The linear regression model aimed to capture the relationship between the target variable "cnt" and several predictor variables. The model's primary goal was to provide accurate predictions of bike rental counts based on weather conditions, time-related factors, and other relevant features.
 
-- Model Performance
-  The final model's performance metrics include a low Mean Squared Error (MSE) of 0.0097 and a Root Mean Squared Error (RMSE) of 0.0985, indicating that the model's predictions are generally close to the actual values.
+- **Model Performance**
+
+The final model's performance metrics include a low Mean Squared Error (MSE) of 0.0097 and a Root Mean Squared Error (RMSE) of 0.0985, indicating that the model's predictions are generally close to the actual values.
 
 The R-square values provide insights into the amount of variance in the dependent variable that is explained by the independent variables. The R-square of 0.836 for the training set and 0.795 for the testing set suggest that around 83.6% and 79.5% of the variance in 'cnt' is explained by the predictors included in the model, respectively.
 
@@ -30,32 +31,33 @@ The Adjusted R-square values take into account the number of features and the co
 
 Hence, this is a good model demonstrating reasonably good fit to the data
 
-- Features Importance
-  As per our final model, top 3 features that are significant in predicting demand for shared bikes are:
+- **Features Importance**
 
-1. Temperature (temp) : One unit increase in temp variable increases the bike rental count by 0.5636 units. Higher temperatures are associated with higher bike rental counts.
+As per our final model, **top 3 features** that are significant in predicting demand for shared bikes are:
 
-2. Weather (weathersit 3: weather_3_showers) : Compared to reference category weathersit 1, one unit increase in weathersit 3 variable decreases bike rental count by 0.288 units. Presence of showers (weathersit 3) is associated with lower bike rental counts.
+1. Temperature (**temp**) : One unit increase in temp variable increases the bike rental count by 0.5636 units. Higher temperatures are associated with higher bike rental counts.
 
-3. Year (yr) : One unit increase in year variable increases the bike rental count by 0.233 units. Bike rental counts have increased over the years.
+2. Weather (**weathersit 3**: weather_3_showers) : Compared to reference category weathersit 1, one unit increase in weathersit 3 variable decreases bike rental count by 0.288 units. Presence of showers (weathersit 3) is associated with lower bike rental counts.
 
-Impact of other predictors are as below:
+3. Year (**yr**) : One unit increase in year variable increases the bike rental count by 0.233 units. Bike rental counts have increased over the years.
 
-4. Wind Speed (windspeed) : One unit increase in windspeed variable decreases bike rental count by 0.155 units. Higher wind speeds are more challenging and leads to lower bike rentals.
+#### Impact of **other predictors** are as below:
 
-5. Winter Season (season_winter) : Compared to reference category Season 1 Spring, one unit increase in season 4 i.e., winter variable increases bike rental count by 0.131 units. Might be due to favourable weather conditions in some parts during winter.
+4. Wind Speed (**windspeed**) : One unit increase in windspeed variable decreases bike rental count by 0.155 units. Higher wind speeds are more challenging and leads to lower bike rentals.
 
-6. September (mnth_9) : Compared to reference category Jan, one unit increase in September, mnth_9 increases bike rental count by 0.097 units
+5. Winter Season (**season_winter**) : Compared to reference category Season 1 Spring, one unit increase in season 4 i.e., winter variable increases bike rental count by 0.131 units. Might be due to favourable weather conditions in some parts during winter.
 
-7. Summer Season (season_summer) : Compared to reference category Season 1 Spring, one unit increase in season 2 i.e., Summer variable increases bike rental count by 0.087 units. Summer is generally favourable for outdoor activities.
+6. September (**mnth_9**) : Compared to reference category Jan, one unit increase in September, mnth_9 increases bike rental count by 0.097 units
 
-8. Weather (weathersit 2: weather_2_hazy) : Compared to reference category weathersit 1, one unit increase in weathersit 2 variable decreases bike rental count by 0.08 units. Presence of mist and clouds (weathersit 2) is associated with lower bike rental counts.
+7. Summer Season (**season_summer**) : Compared to reference category Season 1 Spring, one unit increase in season 2 i.e., Summer variable increases bike rental count by 0.087 units. Summer is generally favourable for outdoor activities.
 
-9. Weekday 6 (day_6) : Compared to reference category Weekday 0 i.e, Sunday, one unit increase in weekday 6 variable increases bike rental count by 0.067 units. Generally people tend to go out on weekends, that explains the increase.
+8. Weather (**weathersit 2**: weather_2_hazy) : Compared to reference category weathersit 1, one unit increase in weathersit 2 variable decreases bike rental count by 0.08 units. Presence of mist and clouds (weathersit 2) is associated with lower bike rental counts.
 
-10. Working day (workingday) : One unit increase in workingday variable increases the bike rental count by 0.056 units. More people use bikes to go to office on working days.
+9. Weekday 6 (**day_6**) : Compared to reference category Weekday 0 i.e, Sunday, one unit increase in weekday 6 variable increases bike rental count by 0.067 units. Generally people tend to go out on weekends, that explains the increase.
 
-11. const : When no other predictor variables are present, bike rentals can still increase by 0.07 units
+10. Working day (**workingday**) : One unit increase in workingday variable increases the bike rental count by 0.056 units. More people use bikes to go to office on working days.
+
+11. **const** : When no other predictor variables are present, bike rentals can still increase by 0.07 units
 
 ## Technologies Used
 
